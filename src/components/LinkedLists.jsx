@@ -129,7 +129,7 @@ export default function LinkedLists() {
         element in the list.
       </p>
       <p>
-        Each node in a doubly linked list has a refernce to the nex and previous
+        Each node in a doubly linked list has a refernce to the next and previous
         element.
       </p>
     </main>
