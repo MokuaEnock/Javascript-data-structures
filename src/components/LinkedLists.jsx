@@ -55,7 +55,46 @@ export default function LinkedLists() {
       }
     }
 
-    
+    // fucntion to insert item into a specific position
+    insert(data, index) {
+      // if the index is out of range the function exists
+      if (index < 0 || index > this.length) {
+        return
+      }
+
+      //   if the index is 0 the elemnt is added using the prepend method
+      if (index === 0) {
+        this.prepend(data)
+        return
+      }
+
+      //   if the index is equal to the legth of the list the item is added using the append method
+
+      if (index === this.length) {
+        this.append(data)
+        return
+      }
+
+      //   create teh new node
+      let newNode = new Node(data)
+      let current = this.head
+      let previous
+      let i = 0
+
+      //   find teh position where teh node needs to be inserted
+
+      while (i < index) {
+        previous = current
+        current = current.next
+        i++
+      }
+
+      //   link the new node to the previous and next elements
+      previous.next = newNode
+      newNode.next = current
+      this.length++
+      return this
+    }
   }
 
   return (
