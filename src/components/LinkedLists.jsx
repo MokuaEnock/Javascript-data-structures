@@ -108,10 +108,6 @@ export default function LinkedLists() {
     }
   }
 
-
-
-  
-
   return (
     <main>
       <h2>Linked Lists</h2>
