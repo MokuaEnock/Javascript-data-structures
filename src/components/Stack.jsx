@@ -17,6 +17,16 @@ export default function Stacks() {
       }
       return this.items.pop()
     }
+
+    // return the top elemnt of teh stack without reoving it
+    peek() {
+      if (this.isEmpty()) {
+        return 'The stack is empty'
+      }
+      return this.items[this.items.length - 1]
+    }
+
+    
   }
   return (
     <main>
