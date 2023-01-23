@@ -5,11 +5,18 @@ export default function Stacks() {
       this.items = []
     }
 
+    // push element to the top of the stack
     push(element) {
       this.items.push(element)
     }
 
-    
+    // remove and return top element of stack
+    pop() {
+      if (this.isEmpty()) {
+        return 'underflow'
+      }
+      return this.items.pop()
+    }
   }
   return (
     <main>
