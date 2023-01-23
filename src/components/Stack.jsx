@@ -26,7 +26,9 @@ export default function Stacks() {
       return this.items[this.items.length - 1]
     }
 
-    
+    isEmpty() {
+      return this.items.length === 0
+    }
   }
   return (
     <main>
