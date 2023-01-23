@@ -1,4 +1,22 @@
 export default function LinkedLists() {
+  // Creating node for the linked list
+
+  class Node {
+    constructor(data) {
+        // each node has a data and next property 
+      this.data = data
+      this.next = null
+    }
+  }
+
+  // creating the linked list
+
+  class LinkedList{
+    constructor(){
+        this.head
+    }
+  }
+
   return (
     <main>
       <h2>Linked Lists</h2>

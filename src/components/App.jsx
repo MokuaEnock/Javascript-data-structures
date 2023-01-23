@@ -3,18 +3,8 @@ import useUpdatingClock from 'hooks/useUpdatingClock'
 export default function App() {
   const {hour, minutes, seconds, amPm} = useUpdatingClock()
 
-  // Creating node for the linked list
 
-  class Node {
-    constructor(data) {
-      this.data = data
-      this.next = null
-    }
-  }
 
-  // creating the linked list
-
-  
 
   return (
     <div className="df flex-col vh-100">
