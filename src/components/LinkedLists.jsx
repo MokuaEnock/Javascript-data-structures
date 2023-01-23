@@ -3,7 +3,7 @@ export default function LinkedLists() {
 
   class Node {
     constructor(data) {
-        // each node has a data and next property 
+      // each node has a data and next property
       this.data = data
       this.next = null
     }
@@ -11,9 +11,31 @@ export default function LinkedLists() {
 
   // creating the linked list
 
-  class LinkedList{
-    constructor(){
-        this.head
+  class LinkedList {
+    constructor() {
+      // head and tail properties are used to keep track of the beginning and end of the list
+      this.head = null
+      this.tail = null
+
+      //   length property keeps track of the number of elemnts in a list
+      this.length = 0
+    }
+
+    append(data) {
+      // function to add an elemnt to the emd of teh list
+      let newNode = new Node(data)
+
+      //   if list is empty new node becomes both head and tail
+      if (!this.head) {
+        this.head = newNode
+        this.tail = newNode
+      } else {
+        // if the list is not empty the new node is added after the tail
+        this.tail.next = newNode
+        this.tail = newNode
+      }
+      this.length++
+      return this
     }
   }
 
