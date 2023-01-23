@@ -1,4 +1,16 @@
 export default function Queues() {
+  //create a class for each node within the node
+
+  class Node {
+    // adding properties of a node taht is pointer and value
+
+    constructor(value) {
+      this.value = value
+      this.next = null
+    }
+
+    
+  }
   return (
     <main>
       <h2>Queue</h2>
