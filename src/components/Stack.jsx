@@ -1,4 +1,16 @@
 export default function Stacks() {
+  class Stack {
+    constructor() {
+      // initialize emty array to store stack elemnts
+      this.items = []
+    }
+
+    push(element) {
+      this.items.push(element)
+    }
+
+    
+  }
   return (
     <main>
       <h2>Stacks</h2>
