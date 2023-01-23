@@ -17,12 +17,12 @@ export default function LinkedLists() {
       this.head = null
       this.tail = null
 
-      //   length property keeps track of the number of elemnts in a list
+      //   length property keeps track of the number of elements in a list
       this.length = 0
     }
 
+    // function to add an elemnt to the end of the list
     append(data) {
-      // function to add an elemnt to the emd of teh list
       let newNode = new Node(data)
 
       //   if list is empty new node becomes both head and tail
@@ -37,6 +37,25 @@ export default function LinkedLists() {
       this.length++
       return this
     }
+
+    // function to add elemnt to the beginning of the list
+    prepend(data) {
+      let newNode = new Node(data)
+
+      //   the newnode next property is set to the current head
+      newNode.next = this.head
+      this.head = newNode
+      this.length++
+
+      //   if the list is empty the new node also becomes th tail
+      if (!this.tail) {
+        this.tail = newNode
+      } else {
+        return this
+      }
+    }
+
+    
   }
 
   return (
