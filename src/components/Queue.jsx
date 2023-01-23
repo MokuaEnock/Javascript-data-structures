@@ -3,7 +3,6 @@ export default function Queues() {
 
   class Node {
     // adding properties of a node taht is pointer and value
-
     constructor(value) {
       this.value = value
       this.next = null
@@ -47,6 +46,15 @@ export default function Queues() {
       return temp.value
     }
   }
+
+  let sampleQueue = new Queue()
+
+  sampleQueue.enqueue('value1')
+  sampleQueue.enqueue('value2')
+  sampleQueue.enqueue('value3')
+
+  console.log(sampleQueue.first)
+
   return (
     <main>
       <h2>Queue</h2>
