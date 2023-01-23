@@ -10,7 +10,7 @@ export default function App() {
       <Routes>
         <Route path="/linked_lists" element={<LinkedLists />} />
         <Route path="/stacks" element={<Stacks />} />
-        <Route path="/stacks" element={<Queues />} />
+        <Route path="/queue" element={<Queues />} />
       </Routes>
     </BrowserRouter>
   )
