@@ -95,7 +95,22 @@ export default function LinkedLists() {
       this.length++
       return this
     }
+
+    // function to delete element from list
+    delete(index) {
+      // if teh index is out of range the function exists
+      if (index < 0 || index >= this.length) {
+        return
+      }
+      if (index === 0) {
+        this.head
+      }
+    }
   }
+
+
+
+  
 
   return (
     <main>
