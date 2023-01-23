@@ -32,6 +32,20 @@ export default function Queues() {
 
       return ++this.size
     }
+
+    // removes the elemnt at the beiginning of the list
+    dequeue() {
+      if (!this.first) return null
+
+      let temp = this.first
+      if (this.first === this.last) {
+        this.last = null
+      }
+
+      this.first = this.first.next
+      this.size--
+      return temp.value
+    }
   }
   return (
     <main>
