@@ -1,4 +1,5 @@
 import LinkedLists from './LinkedLists'
+import '../styles/app.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 export default function App() {

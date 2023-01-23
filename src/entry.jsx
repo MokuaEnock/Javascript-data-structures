@@ -9,7 +9,7 @@
   Import our top-level scss file.
   All other scss files should be imported in `styles.scss`.
 */
-import './styles/styles.scss'
+import './styles/app.css'
 
 // Import React.
 import React from 'react'
