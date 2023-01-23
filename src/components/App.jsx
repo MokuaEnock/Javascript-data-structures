@@ -2,6 +2,7 @@ import LinkedLists from './LinkedLists'
 import '../styles/app.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Stacks from './Stack'
+import Queues from './Queue'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Routes>
         <Route path="/linked_lists" element={<LinkedLists />} />
         <Route path="/stacks" element={<Stacks />} />
+        <Route path="/stacks" element={<Queues />} />
       </Routes>
     </BrowserRouter>
   )
